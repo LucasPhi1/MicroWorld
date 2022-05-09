@@ -1,0 +1,122 @@
+.box-perso {
+    width: 60%;
+    margin: 100px auto 60px auto;
+    padding: 40px 60px 40px 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px;
+}
+
+
+
+.box-produit {
+    width: 80%;
+    margin: 100px auto 60px auto;
+    padding: 40px 60px 40px 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px;
+}
+
+.box-coord-banq {
+    width: 60%;
+    margin: 0px auto 0px auto;
+}
+
+.image-produit-upload>input {
+    display: none;
+  }
+
+footer {
+    position: fixed;
+    height: 110px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+}
+
+
+
+.body-bg-grey {
+    background-color:RGB(239, 239, 238);
+}
+
+.description {
+    font-size: 15px;
+}
+
+.nb-produit-panier {
+    display: inline;
+    border-radius: 50%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+    background: rgb(255, 0, 0);
+    text-align: center;
+}
+
+/* Etoile avis client */
+
+/* pour afficher la note */
+.etoile {
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    color: #FFD600;
+    font-size: 28px;
+}
+
+.label-ratio-avis {
+    width: 4em;
+}
+
+.ratio-avis {
+    width: 4em;
+}
+
+.bar-avis {
+    width: 12em;
+    background-color: rgb(190, 190, 190);
+}
+
+.ratio-bar-avis {
+    background-color: rgb(255, 221, 31);
+}
+
+/* Pour choisir la note */
+.noteAvis {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.noteAvis>input {
+    display: none
+}
+
+.noteAvis>label {
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.noteAvis>label::before {
+    content: "★";
+    position: absolute;
+    opacity: 0
+}
+
+.noteAvis>label:hover:before,
+.noteAvis>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.noteAvis>input:checked~label:before {
+    opacity: 1
+}
+
+.noteAvis:hover>input:checked~label:before {
+    opacity: 0.4
+}
